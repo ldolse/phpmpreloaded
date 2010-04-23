@@ -1,0 +1,3 @@
+[submodule "phpmp"]
+	path = phpmp
+	url = ssh://tswaehn@phpmpreloaded.git.sourceforge.net/gitroot/phpmpreloaded/phpmp
