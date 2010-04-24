@@ -144,7 +144,7 @@ function GetSongTitle($songInfo)
 if(!file_exists("config.inc.php") && !isset($is_config)) header("location: config.php");
 
 @include_once("config.inc.php");     // Including configuration
-include_once("../../lib/mpd.class.php");      // And MPD Class
+include_once("../mpd.class/mpd.class.php");      // And MPD Class
 
 // For previous versions
 if(empty($cfg["default_lang"])) $cfg["default_lang"] = "en";

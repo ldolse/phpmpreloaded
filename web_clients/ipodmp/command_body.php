@@ -3,7 +3,7 @@
 // takes mpd command and sends them to the server. May be included by any script at the beginning. 
 // at the beginning it was a own class. Now we use the mpd.class!!!
 include "config.php";
-include "../../lib/mpd.class.php";
+include "../mpd.class/mpd.class.php";
 // removed sort.php here as it is now in mpd.class.php
 //
 $mpd = new mpd($config_host,$config_port);
