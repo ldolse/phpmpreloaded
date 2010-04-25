@@ -27,7 +27,7 @@ echo '
 	background-color:white; 
 
 	padding:5px;
-	
+	-moz-border-radius: 4px;	
 	
 }
 
