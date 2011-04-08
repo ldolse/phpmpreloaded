@@ -1,7 +1,15 @@
 <?php
+
+/* some helpers for phpMpReloaded */
+define('__PHPMPRELOADED_MPD_SETTINGS__', '../../config/mpd_config.php' );
+define('__PHPMPRELOADED_CLIENT_SWITCHER__', '../../lib/ClientSwitcher.php');
+if (file_exists( __PHPMPRELOADED_MPD_SETTINGS__ )){
+	include(__PHPMPRELOADED_MPD_SETTINGS__);
+}
+
 // NEED TO SET THESE!
-$config_host = "192.168.2.35";
-$config_port = 6600;
+$config_host = $mpd_host;
+$config_port = $mpd_port;
 
 // OPTIONAL
 $title = "iPodMp";
