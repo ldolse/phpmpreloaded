@@ -146,6 +146,8 @@ if(!file_exists("config.inc.php") && !isset($is_config)) header("location: confi
 @include_once("config.inc.php");     // Including configuration
 include_once("../mpd.class/mpd.class.php");      // And MPD Class
 
+echo '<span style="color:grey">connected to '.$cfg["host"].'</span><br>';
+
 // For previous versions
 if(empty($cfg["default_lang"])) $cfg["default_lang"] = "en";
 

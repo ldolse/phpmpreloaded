@@ -1,4 +1,4 @@
 <?php
-			$mpd_host	 	= "192.168.2.35";
+			$mpd_host	 	= "localhost";
  			$mpd_port 		= 6600;
 		?>

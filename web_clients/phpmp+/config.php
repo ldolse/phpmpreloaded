@@ -2,13 +2,11 @@
 // PhpMusicPlayer+
 // Configuration dialog
 
-include('../../config/mpd_config.php' );
-
 $no_connect = TRUE;
 $is_config = TRUE;
 include_once("functions.inc.php");
 
-$defaults = array("host"=>$mpd_host,"port"=>$mpd_port,"style"=>"default","title"=>"Music Player","refresh"=>30,"playlist_length"=>20,
+$defaults = array("host"=>$cfg["host"],"port"=>$cfg["port"],"style"=>"default","title"=>"Music Player","refresh"=>30,"playlist_length"=>20,
     "lang"=>$userConfig['lang'],"client_password"=>"abcd","song_display"=>"(artist) title??filename");
 
 if(!file_exists("config.inc.php") && isset($_POST['client_password'])) {
