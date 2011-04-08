@@ -7,13 +7,14 @@
  * by tswaehn (http://sourceforge.net/users/tswaehn/)
  */
  
- 
+// defines for different reading types
 define('__READ_UNKNOWN__', 	0);
 define('__READ_CURL__', 	1);
 define('__READ_TEXT__',		2);
 define('__READ_IMAGE__',	3);
 
 
+// setting debug
 define('__DEBUG__',	0	);
 
 
@@ -22,17 +23,20 @@ class NewsReader {
 	var $readMethods;
 
 	function __construct(){
-		$this->readMethod = __READ_UNKNOWN__;
 		
+		// check the available methods for reading news from an external server
 		$this->checkAvailableReadMethods(); 		
 	}
-	
+
+	/*
+	 *  check different read-news-methods
+	 */	
 	function checkAvailableReadMethods(){
-		// 1. check curl
+		// 1. check curl ... most safe option
 		if ($this->isCurlInstalled()){
 			$this->readMethods[] = __READ_CURL__;
 		}
-		// 2. check fopen
+		// 2. check fopen ... quite easy method
 		if ($this->canUrlFOpen()){
 			$this->readMethods[] = __READ_TEXT__;
 		}
@@ -44,12 +48,19 @@ class NewsReader {
 		
 	}
 	
+	/*
+	 * 	common "readNews" member function
+	 *  decides internally which read method to choose
+	 *
+	 */
 	function readNews( $url ){
 		// take the first(best) available method
 		$method = $this->readMethods[0];
 		
+		
 		$news = '';
 		
+		// read news depending on method
 		switch ($method){
 			case __READ_CURL__ : $news = $this->curlReadNews( $url ); break;
 			case __READ_TEXT__ : $news = $this->textReadNews( $url ); break; 	
@@ -57,9 +68,12 @@ class NewsReader {
 					//$news = $this->imgReadNews( $url );
 		}
 		
+		// generate a "frame"
 		if ($news != '' ){
 			$news = '<div id="news">'.$news.'</div>';
 		}
+		
+		// return the news :-)
 		return $news;
 	}	
 

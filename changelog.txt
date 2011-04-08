@@ -9,8 +9,8 @@ join the mailing list
 	
 
 	
-next actions
-	- find all "split()" calls and figure out a way of avoiding them as "split()" is deprecated
+27/apr/2010
+	- fix all "split()" calls and figure out a way of avoiding them as "split()" is deprecated
 		- Deprecated: Function split() is deprecated in /home/tswaehn/public_html/git_dev/phpMpReloaded/web_clients/phpMp/stream_body.php on line 13
 		- Deprecated: Function split() is deprecated in /home/tswaehn/public_html/git_dev/phpMpReloaded/web_clients/phpMp/search_body.php on line 12
 		- Deprecated: Function split() is deprecated in /home/tswaehn/public_html/git_dev/phpMpReloaded/web_clients/phpMp/login_body.php on line 13		

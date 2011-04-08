@@ -31,9 +31,13 @@
 		echo '</div>';
 		
 	echo '<div id="credit">';
-	echo $news->readNews('http://phpmpreloaded.sourceforge.net/NewsProvider/?version='.__VERSION__);
-	echo 'Support <a href="http://sourceforge.net/projects/phpmpreloaded/">us</a> and visit<br>'; 
-	echo '<a href="http://sourceforge.net/projects/phpmpreloaded"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=304529&amp;type=9" width="80" height="15" alt="Get ::phpMpReloaded:: The webclient for mpd at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>';	
+		
+		// recive news from news server 
+		echo $news->readNews('http://phpmpreloaded.sourceforge.net/NewsProvider/?version='.__VERSION__);
+		
+		// support links
+		echo 'Support <a href="http://sourceforge.net/projects/phpmpreloaded/">us</a> and visit<br>'; 
+		echo '<a href="http://sourceforge.net/projects/phpmpreloaded"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=304529&amp;type=9" width="80" height="15" alt="Get ::phpMpReloaded:: The webclient for mpd at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>';	
 	echo '</div>';
  
  	echo '</div>'; 
