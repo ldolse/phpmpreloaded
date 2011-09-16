@@ -16,6 +16,8 @@ Projects which are allread included in phpMpReloded:
   - phpMp+
   - phpMp2
   - phpMp3
+  - IPodMp
+  - MPD-Web-Remote
 
 
 Do you want your Webclient include into phpMpReloded?

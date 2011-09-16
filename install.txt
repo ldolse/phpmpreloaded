@@ -25,7 +25,7 @@ Depending on the distribution different installation routines are available:
 	2.) Linux Ubuntu 
 
 
-Anything doesn't work as discribed? contact as via the mailing list
+Anything doesn't work as discribed? contact us via the mailing list
 	
 	https://lists.sourceforge.net/lists/listinfo/phpmpreloaded-team 
 
