@@ -17,7 +17,7 @@ echo '<style type="text/css">';
 echo '
 
 #switcher_box {
-	
+
 	width:100px;
 	margin:0px;
 	border:thin solid grey;
@@ -32,7 +32,7 @@ echo '
 }
 
 #clientswitcher {
-
+	display:block;
 	text-align:center;
 	font-size:x-small;
 	color:darkblue;

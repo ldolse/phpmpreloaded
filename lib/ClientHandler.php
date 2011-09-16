@@ -88,9 +88,11 @@
 		$this->addClient( 'phpMp+', 'phpmp+', 'v0.2.3 - client by BohwaZ');
 
 		$this->addClient( 'phpMp2', 'phpmp2', 'v0.11.0 - client by mpd team');
-		$this->addClient( 'phpMp3', 'phpmp3', 'v0.2 - client by <a href="http://sourceforge.net/projects/phpmp3/">angry_elf</a>');
+		$this->addClient( 'phpMp3', 'phpmp3', 'v0.2 - client by <a href="http://sourceforge.net/projects/phpmp3/" target="_blank">angry_elf</a>');
 		
-		$this->addClient( 'IPodMp', 'ipodmp', 'client by Hendrik Stoetter 03/2008 <a href="http://www.itrium.de/pages/home/mpd_ipod_touch_musikserver_remote_wlan.php?font_size=100">link</a>');
+		$this->addClient( 'IPodMp', 'ipodmp', 'client by Hendrik Stoetter 03/2008 <a href="http://www.itrium.de/pages/home/mpd_ipod_touch_musikserver_remote_wlan.php?font_size=100" target="_blank">link</a>');
+		
+		$this->addClient( 'MPD-Web-Remote', 'mobile.clients/MPD-Web-Remote', 'client by Thomas Preston <a href="https://github.com/tompreston/MPD-Web-Remote/tree/tswaehn" target="_blank">link</a>');
 		
 		//only for testing
 		//$this->addClient( 'mpd.class.test', 'phpMpClassTest', 'test client by tswaehn');		 		

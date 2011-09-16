@@ -26,6 +26,7 @@ echo "<title>".$page_title."</title>";
 echo '<meta author=\"Sven Ginka\">';
 echo '<meta project=\"phpMpReloaded\">';
 echo '<meta package=\"pmr v0.1\">';
+echo '<meta content="width=device-width, user-scalable=yes" name="viewport" />';
 echo '<meta http-equiv=\"expires\" content=\"3600\">';
 echo '<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">'; 
 echo '<meta http-equiv="Content-Style-Type" content="text/css">';

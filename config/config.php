@@ -13,6 +13,7 @@
  */ 
 
  define('__THEME__', 'default' );
+ date_default_timezone_set  ( "Europe/Berlin" );
 
 
 /*
@@ -20,11 +21,11 @@
  */
  
  define('__PROJECT__', 'phpMpReloaded');
- define('__VERSION__', '1.1c');
+ define('__VERSION__', '1.2');
  
  include('./config/mpd_config.php');
  define('__THEME_DIR__', './themes/'.__THEME__.'/' );
- date_default_timezone_set  ( "Europe/Berlin" );
+ 
  
  
 ?>
