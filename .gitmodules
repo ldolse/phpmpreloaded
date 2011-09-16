@@ -1,3 +1,7 @@
 [submodule "web_clients/phpmp"]
 	path = web_clients/phpmp
 	url = ssh://tswaehn@phpmpreloaded.git.sourceforge.net/gitroot/phpmpreloaded/phpmp
+[submodule "web_clients/mobile.client"]
+	path = web_clients/phpmp
+	url = git@github.com:tompreston/MPD-Web-Remote.git
+

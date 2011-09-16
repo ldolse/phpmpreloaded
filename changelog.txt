@@ -7,7 +7,10 @@
 join the mailing list
 	https://lists.sourceforge.net/lists/listinfo/phpmpreloaded-team
 	
-
+	
+08/apr/2011
+	- fix: hardconfig (host/port) in IPodMp
+	- fix: hardconfig (host/port) in phpMp+
 	
 27/apr/2010
 	- fix all "split()" calls and figure out a way of avoiding them as "split()" is deprecated

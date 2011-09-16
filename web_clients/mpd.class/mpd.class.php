@@ -1,7 +1,7 @@
 <?php
 /* 
  * 
- * Sven Ginka 03/2010
+ * Sven Ginka (sven.ginka@gmail.com) 03/2010
  * Version mpd.class.php-1.3
  * - take over from Hendrik Stoetter
  * - removed "split()" as this function is marked depracted
@@ -39,11 +39,14 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- 
-
-
+ *
+ *
+ *
  */ 
 
+/*
+ * MPD command reference at http://www.musicpd.org/doc/protocol/index.html
+ */
 
 // Create common command definitions for MPD to use
 define("MPD_CMD_STATUS",      "status");
@@ -148,7 +151,7 @@ class mpd {
 	var $stats;
 
 	// Misc Other Vars	
-	var $mpd_class_version = "1.2";
+	var $mpd_class_version = "1.3";
 
 	var $debugging   = FALSE;    // Set to TRUE to turn extended debugging on.
 	var $errStr      = "";       // Used for maintaining information about the last error message
