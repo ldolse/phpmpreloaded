@@ -8,14 +8,14 @@ join the mailing list
 	https://lists.sourceforge.net/lists/listinfo/phpmpreloaded-team
 	
 
-16/sep/2011
+16/sep/2011 -- [v1.2]
 	- add: new client "MPD-Web-Remote" for mobile devices added
 		
-08/apr/2011
+08/apr/2011 -- [testing only]
 	- fix: hardconfig (host/port) in IPodMp
 	- fix: hardconfig (host/port) in phpMp+
 	
-27/apr/2010
+27/apr/2010 -- [v1.1c]
 	- fix all "split()" calls and figure out a way of avoiding them as "split()" is deprecated
 		- Deprecated: Function split() is deprecated in /home/tswaehn/public_html/git_dev/phpMpReloaded/web_clients/phpMp/stream_body.php on line 13
 		- Deprecated: Function split() is deprecated in /home/tswaehn/public_html/git_dev/phpMpReloaded/web_clients/phpMp/search_body.php on line 12
