@@ -30,7 +30,7 @@ if($configuration["combined_slider"] == true) {
 		echo "</td>\n";
 	}
 	echo "</tr></table>\n<table cellspacing=\"0\" class=\"nostyle\" style=\"text-align: center\"><tr class=\"nostyle\"><td style=\"background: none\"></td><td style=\"width: ".($configuration["slider_width"] * 4 + 5)."px\">\n";
-	create_slider($slider_var["value"], 0, $slider_var["maximum"], $configuration["slider_width"], $slider_var["command"], true);
+	create_slider($slider_var["value"], 0, $slider_var["maximum"], $configuration["slider_width"], $slider_var["command"], true, $configuration["combined_slider_control"]=="seek");
 	echo "\n</td><td style=\"background: none\"></td></tr></table>\n";
 } else {
 	if($configuration["display_volume"]) {

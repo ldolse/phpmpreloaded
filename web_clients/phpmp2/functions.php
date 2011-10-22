@@ -226,7 +226,7 @@ function do_mpd_command_list($conn, $command, $arglist) {
 
 //Creates a slider of length $length that can vary $var from $min to $max, hilighted up to the point of $current.
 // If $intonly is true, it rounds off each segment to the nearest integer.
-function create_slider($current, $min, $max, $length, $var, $intonly = false) {
+function create_slider($current, $min, $max, $length, $var, $intonly = false, $istime = false) {
 	global $configuration, $layout_vars;
 	if($configuration["graphical_sliders"] == true && style_slider_image() == true && function_exists("imagecreatetruecolor")) {
 		echo "<form method=\"get\">\n";
@@ -238,10 +238,10 @@ function create_slider($current, $min, $max, $length, $var, $intonly = false) {
 		if (array_key_exists ("content", $_REQUEST)) echo "<input type=\"hidden\" name=\"content\" value=\"".$_REQUEST["content"]."\" />\n";
 		echo "<input type=\"image\" alt=\"[slider]\" src=\"slider.php?imagedark=".style_slider_image("dark")."&amp;imagelight=".style_slider_image("light")."&amp;length=".$length."&amp;value=".$current."&amp;min=".$min."&amp;max=".$max."\" name=\"slider\">\n</form>";
 	} else {
-		echo "<div style=\"width: ".($length * 4 + 4)."px\">";
+		echo "<div style=\"width: ".($length + 4)."px\">";
 		for($segment = 0; $segment <= intval($length/4); $segment++) {
-			$pos = $segment * (($max - $min) / $length);
-			echo "<a href=\"?command=".$var."&amp;arg=".($intonly ? intval($pos) : $pos).(array_key_exists("content", $_REQUEST) ? "&content=".$_REQUEST["content"] : "")."\" title=\"".($intonly ? intval($pos) : $pos)."\" class=\"".($pos <= $current ? "sliderlite" : "sliderdark")."\"> </a>\n";
+			$pos = $segment * 4 * (($max - $min) / $length);
+			echo "<a href=\"?command=".$var."&amp;arg=".($intonly ? intval($pos) : $pos).(array_key_exists("content", $_REQUEST) ? "&content=".$_REQUEST["content"] : "")."\" title=\"".($istime ? intval($pos/60).":".intval($pos)%60: ($intonly ? intval($pos) : $pos))."\" class=\"".($pos <= $current ? "sliderlite" : "sliderdark")."\"> </a>\n";
 		}
 		echo "</div>";
 	}
