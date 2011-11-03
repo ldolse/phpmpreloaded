@@ -6,8 +6,13 @@
 	
 join the mailing list
 	https://lists.sourceforge.net/lists/listinfo/phpmpreloaded-team
-	
 
+
+	- mod: new skin "classic-adv" for phpmp2 
+		
+22/oct/2011 -- [v1.2a] 
+	- fix: the sliders don't function properly (1. volume only goes up to about 25% and 2. seek slider shows time in min:sec instead of seconds)
+	
 16/sep/2011 -- [v1.2]
 	- add: new client "MPD-Web-Remote" for mobile devices added
 		

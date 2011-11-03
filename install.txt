@@ -1,8 +1,9 @@
 
 ...::::::	phpMpReloded	....::::::
 
-	I N S T A L L
+	I N S T A L L 
 	
+
 	
 ------------	
 Requirements
@@ -14,10 +15,14 @@ Requirements
 				 
 	- Music Player Daemon -- http://mpd.wikia.com/wiki/
 	
+	- on Microsoft Windows Machines the web server can be : 
+		- XAMPP -- http://www.apachefriends.org/de/xampp.html
+
 	
 ------------	
 installation
 ------------ 
+(v1.1)
 
 Depending on the distribution different installation routines are available:
 	
@@ -42,13 +47,16 @@ Anything doesn't work as discribed? contact us via the mailing list
 	d) move the .tar file to the web directory
 	> mv phpmpreloaded-1.xx.tar.gz /var/www/html/
 	
-	e) unpack the file
+	e) jump to the installation directory
+	> cd /var/www/html/
+	
+	f) unpack the file
 	> tar -xf phpmpreloaded-1.xx.tar.gz
 	
-	f) change the files owner to make them available to apache
+	g) change the files owner to make them available to apache
 	> chown apache.apache -R phpmpreloaded
 	
-	g) now your web client is online !
+	h) now your web client is online !
 	 open a firefox/konqueror and browse to http://YOURSERVER/phpmpreloaded
 	 
 
@@ -61,13 +69,16 @@ Anything doesn't work as discribed? contact us via the mailing list
 	c) move the .tar file to the web directory
 	> sudo mv phpmpreloaded-1.xx.tar.gz /srv/www/htdocs
 	
-	d) unpack the file
+	d) jump to the installation directory
+	> cd /srv/www/htdocs
+
+	e) unpack the file
 	> sudo tar -xf phpmpreloaded-1.xx.tar.gz
 	
-	e) change the files owner to make them available to apache
+	f) change the files owner to make them available to apache
 	> sudo chown www-data.www-data -R phpmpreloaded
 	
-	f) now your web client is online !
+	g) now your web client is online !
 	 open a firefox/konqueror and browse to http://YOURSERVER/phpmpreloaded
 	 
    
