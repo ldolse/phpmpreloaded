@@ -73,10 +73,10 @@ function get_pref_language_array($str_http_languages)
         $indicecandidat = $j;
       }
       else {
-        $q = ereg_replace('.*;q=(.*)', '\\1', $lang);
+        $q = preg_replace('/.*;q=(.*)/', '\\1', $lang);
 
         if ($q > $qcandidat) {
-          $candidat = ereg_replace('(.*);.*', '\\1', $lang); ;
+          $candidat = preg_replace('/(.*);.*/', '\\1', $lang); ;
           $qcandidat = $q;
           $indicecandidat = $j;
         }
@@ -145,8 +145,6 @@ if(!file_exists("config.inc.php") && !isset($is_config)) header("location: confi
 
 @include_once("config.inc.php");     // Including configuration
 include_once("../mpd.class/mpd.class.php");      // And MPD Class
-
-echo '<span style="color:grey">connected to '.$cfg["host"].'</span><br>';
 
 // For previous versions
 if(empty($cfg["default_lang"])) $cfg["default_lang"] = "en";
